@@ -2,7 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8"></meta><!--中文編碼-->
-        <title> 你好 </title><!--標題--> 
+        <meta name="description" content="這編寫網頁描述"/>
+        <meta name="author" content="這邊寫作者">
+        <meta name="keywords" content="這,邊,寫,關,鍵,字"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/><!--依裝置畫面大小調整顯示畫面(響應式畫面)-->
+        <title> 土炮網頁 </title><!--標題--> 
     </head>
     <body>
         <!--基本標籤--> 
@@ -36,7 +40,7 @@
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fCwpfETi4gM?si=D92SWKjpGqPlakyx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <!--列表、表格-->
-        <ol type="i"><!--ul(無順序列表)、ol[有順序列表(預設數字，"A"=大寫，"a"=小寫，"i"=小寫羅馬數字，"I"=大寫羅馬數字]-->
+        <ol type="i" style="color:red"><!--ul(無順序列表)、ol[有順序列表(預設數字，"A"=大寫，"a"=小寫，"i"=小寫羅馬數字，"I"=大寫羅馬數字]-->
             <li>google</li>
             <li>facebook</li>
             <li>ig</li>
@@ -44,7 +48,7 @@
         </ol>
 
         <!--表格-->
-        <table width="150" height="150">
+        <table width="150" height="150"style="color:red">
             <tr><!--行-->
                 <td>日期</td>
                 <td>數學</td>
@@ -56,10 +60,62 @@
                 <td>60</td>
             </tr>
             <tr>
-                <td>2/</td>
+                <td>2/8</td>
                 <td>70</td>
                 <td>65</td>
             </tr>
         </table>
+
+        <!--html的容器div&span-->
+        <div style="color:dimgrey">
+            <table width="150" height="150">
+                <tr><!--行-->
+                    <td>日期</td>
+                    <td>數學</td>
+                    <td>英文</td>
+                </tr>
+                <tr>
+                    <td>2/8</td>
+                    <td>80</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>2/8</td>
+                    <td>70</td>
+                    <td>65</td>
+                </tr>
+            </table>
+        </div>
+        <!--依據字數來佔空間-->
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <hr>
+        <!--佔一整行空間-->
+        <p>test1</p>
+        <p>test2</p>
+
+        <span>span1</span><!--佔一整行空間-->
+        <span>span2</span><!--佔一整行空間-->
+        <hr/>
+        <div1>div1</div1><!--依據字數來佔空間-->
+        <div>div2</div><!--依據字數來佔空間-->
+        <br/>
+
+        <!--html輸入標籤-->
+        <input type="text" placeholder="請輸入帳號"/><!--帳號-->
+        <br/>
+        <input type="password" placeholder="密碼"/><!--密碼-->
+        <br/>
+        <input type="date"/><!--日期-->
+        <br/>
+        <input type="range"/><!--托移-->
+        <br/>
+        <input type="file"/><!--檔案-->
+        <br/>
+        <input type="checkbox"/><!--勾選-->
+        <br/>
+        <textarea>輸入文字</textarea>
+        <br/>
+
     </body>
 </html>
